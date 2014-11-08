@@ -1,4 +1,4 @@
-#Training Fragments + MVC:
+#Training: Fragments + MVC
 
 Este proyecto consiste de un `Activity` que posee un formulario de información básica
 de una persona. Al actualizar el campo "Nombre", el título de la pantalla se actualiza con un saludo.
@@ -23,7 +23,7 @@ cuando corresponda.
 molestar a nuestro cliente, asegurémonos que no perdamos la info al rotar la pantalla. No te olvides
 de mantener el título del formulario!
 
-##Extra:
+##Extra
 - Estamos permitiendo que un teléfono tenga letras y que una dirección de email no esté en el formato
 correcto. Configura cada `EditText` para que el teclado limite el input al tipo de dato solicitado.
 - Estaría bueno validar que la información es correcta. Agrega un botón que valide todos los campos.
