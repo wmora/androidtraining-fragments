@@ -17,6 +17,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         firstNameEditText = (EditText) findViewById(R.id.first_name);
+        /**
+         * Agreguamos un {@link android.text.TextWatcher} a {@link #firstNameEditText} para
+         * saber cuando se cambia el nombre de la persona en el formulario
+         */
         firstNameEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
@@ -41,6 +45,9 @@ public class MainActivity extends Activity {
         firstNameEditText.setText(firstName);
     }
 
+    /**
+     * Actualiza el titulo del ActionBar
+     */
     private void updateTitle(String name) {
         getActionBar().setTitle("Hola " + name);
     }
